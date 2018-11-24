@@ -12,23 +12,52 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Music Survey</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
             Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
+            <input type="text" name="name" required><br> 
+            E-mail:
+            <input type="email" name="email"><br><br>
 
             <!--add your own inputs below-->
-
-
-
-
-
-
-
-
+            1) How many hours of music do you listen to daily?<br>
+            <input type="radio" name="hours" value="<1 hour"> &lt; 1 hour
+            <input type="radio" name="hours" value=""> 1-3 hours
+            <input type="radio" name="hours" value=""> 3-5 hours
+            <input type="radio" name="hours" value=""> 5-8 hours
+            <input type="radio" name="hours" value=""> &gt; 8 hours <br><br>
+            
+            2) Do you own:<br>
+            <input type="checkbox" name="property-1" value="phone"> a phone
+            <input type="checkbox" name="property-2" value="mp3"> an mp3 player
+            <input type="checkbox" name="property-3" value="headphones"> headphones
+            <input type="checkbox" name="property-4" value="earbuds"> earbuds
+            <input type="checkbox" name="property-5" value="instrument"> an instrument
+            <input type="checkbox" name="property-6" value="speakers"> speakers
+            <input type="checkbox" name="property-7" value="none"> none <br><br>
+            
+            3) What is your favorite music genre?<br>
+            <select name="favorite genre">
+                <option value="Pop"> Pop </option>
+                <option value="Rock"> Rock </option>
+                <option value="Jazz"> Jazz </option>
+                <option value="Reggaeton"> Reggaeton </option>
+                <option value="Bachata"> Bachata </option>
+                <option value="Classical"> Classical </option>
+                <option value="Country"> Country </option>
+                <option value="Cumbia"> Cumbia </option>
+                <option value="Blues"> Blues </option>
+                <option value="R&B"> R&B </option>
+                <option value="Heavy Metal"> Other </option>
+            </select><br><br>
+            
+            4) If you chose "Other" what is your favorite genre? If not, leave blank.<br>
+            <textarea name="other genre"></textarea><br><br>
+            
+            5) Who is your favorite musical artist/group?<br>
+            <textarea name="artist/group" placeholder="i.e. The Beatles"></textarea><br>
             <!--add your own inputs above-->
 
             <input class="blue-button" type="submit" value="Submit">
